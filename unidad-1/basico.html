@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Elementos bàsicos de HTML</title>
 </head>
+<style>
+#principal{
+    color: brown;
+}
+#secundarios{
+    color: green;
+}
+</style>
 <body>
-    
+    <h1 id="principal">Fundamentos de programaciòn</h1>
+    <p>Pagina que demuestra el uso de los elementos basicos de HTML.</p>
+    <br>
+    <h2>Encabezados</h2>
+    <p>Existen seis niveles y se utilizan con elementos H, el nivel 1 es el mas
+        alto y el 6 el mas bajo.</p><br>
+
+        <hr>
+    <h2 id="secundarios">Listas</h2>
+    <h3>Listas desordenadas</h3>
+    <ul>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Go</li>
+    </ul>
+    <br>
+    <h3>Listas ordenadas</h3>
+    <ol>
+        <li>Windows</li>
+        <li>OSX</li>
+        <li>Linux</li>
+    </ol>
+    <br>
+    <hr>
+    <h2 id="secundarios">Tablas</h4>
+    <table border="1px">
+        <tr>
+           <th>Nombre</th>
+           <th>Grupo</th>
+        </tr>
+        <tr>
+            <td>Sebastian</td>
+            <td>J</td>
+        </tr>
+        <tr>
+            <td>Jason</td>
+            <td>J</td>
+        </tr>
+        <tr>
+            <td>Lupilla</td>
+            <td>?</td>
+        </tr>
+    </table><br>
+    <hr>
+    <h2 id="secundarios">Formulario</h2>
+    <form action="basico.html">
+        <div>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre">
+        </div><br>
+        <div>
+            <label for="contraseña">Contraseña: </label>
+            <input type="password" id="contraseña">
+        </div><br>
+        <label for="sexo">Sexo: </label>
+         <input type="radio"> hombre
+         <input type="radio"> mujer
+         <br><br>
+         <div>
+         <label for="comentarios">Comentarios: </label><br>
+         <textarea id="comentarios" cols="50" rows="10"></textarea>
+         </div>
+         <br>
+         <input type="submit" value="Enviar">
+    </form>
+    <hr>
 </body>
+
 </html>
