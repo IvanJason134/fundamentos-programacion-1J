@@ -1,0 +1,26 @@
+p, li, h1{ /* Selector de elemento */
+    color: blue;
+    width: 500px;
+    border: 1px dashed black;
+}
+p:hover{
+    color: red;
+    font-family: 'Acme', sans-serif;
+    margin: auto;
+}
+#principal{ /* Selector de identidad */
+    color: brown;
+}
+#niveles{
+    background-color: yellow;
+    padding: 20px;
+}
+#niveles:hover{
+    background-color: purple;
+    color: white;
+    padding: 40px;
+}
+.diferente{ /* Selector de clases */
+    color: purple;
+    border: 2px dashed green;
+}

@@ -5,26 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
     <title>Elementos bàsicos de HTML</title>
 </head>
-<style>
-#principal{
-    color: brown;
-}
-#secundarios{
-    color: green;
-}
-</style>
 <body>
     <h1 id="principal">Fundamentos de programaciòn</h1>
     <p>Pagina que demuestra el uso de los elementos basicos de HTML.</p>
     <br>
     <h2>Encabezados</h2>
-    <p>Existen seis niveles y se utilizan con elementos H, el nivel 1 es el mas
+    <p id="niveles">Existen seis niveles y se utilizan con elementos H, el nivel 1 es el mas
         alto y el 6 el mas bajo.</p><br>
 
         <hr>
-    <h2 id="secundarios">Listas</h2>
+    <h2 id="secundarios" class="diferente">Listas</h2>
     <h3>Listas desordenadas</h3>
     <ul>
         <li>C++</li>
@@ -40,8 +34,8 @@
     </ol>
     <br>
     <hr>
-    <h2 id="secundarios">Tablas</h4>
-    <table border="1px">
+    <h2 id="secundarios" class="diferente">Tablas</h4>
+    <table border="1px" cellpadding="5">
         <tr>
            <th>Nombre</th>
            <th>Grupo</th>
