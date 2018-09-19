@@ -1,0 +1,66 @@
+body{
+    background-color: black;
+}
+h2{
+    color: white;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+#cuerpo{
+    background-color: white;
+    width: 35%;
+    text-align: center;
+    border-radius: 8px;
+    margin: auto;
+}
+#titulo{
+    background-color: #049671;
+    border-radius: 8px;   
+}
+div{
+    text-align: center;
+}
+#nombre{
+    padding-top: 15px;
+}
+#correo{
+    padding-top: 8px;
+}
+#mensaje{
+    padding-top: 8px;
+}
+#button{
+    padding: 15px;
+}
+input{
+    width: 70%;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #B0D4B4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    padding: 10px;
+}
+textarea{
+    width: 70%;
+    height: 80px;
+    border-radius: 8px;
+    color: black;
+    background-color: #B0D4B4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    padding: 20px 10px;
+}
+button{
+    width: 160px;
+    height: 45px;
+    border-radius: 8px;
+    background-color: #049671;
+    color: white;
+    font-size: 12pt;
+}
+form{
+    padding-top: 5%;
+}
