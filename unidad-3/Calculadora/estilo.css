@@ -1,0 +1,42 @@
+form{
+    margin-top: 20px;
+}
+.cuerpo{
+    padding: 20px;
+    border: 1px solid black;
+    width: 20%;
+    height: 100%;
+    margin: 0px auto;
+}
+.btn{
+    border: 1px solid black;
+    width: 100%;
+    height: 25px;
+    margin: 0px auto;
+    padding: 5px;
+}
+h1{
+    background-color: #E8CE85;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.numeros{
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    font-size: 12pt;
+}
+.cuerbtn{
+    padding: 5px;
+}
+#resultado{
+    color: red;
+}
+#lbresult{
+    margin-left: 40%;
+    font-weight: bold;
+}
+.textbox{
+    padding: 5px;
+}
