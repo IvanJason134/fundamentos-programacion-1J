@@ -1,9 +1,34 @@
 var pResultado = document.querySelector('#resultado');
 var btnNumero = document.querySelector('#btnNumero');
 var opciones = document.querySelector('#opciones');
-opciones.addEventListener('change', evalopc);
+opciones.addEventListener('change', evalOpcSwitch);
 
 btnNumero.addEventListener('click', evaluar);
+
+function evalOpcSwitch (){
+    var num = document.querySelector('#numero');
+    var numero = Number(num.value);
+    var opcion = opciones.value;
+
+    switch (opcion) {
+        case 'mitad':
+            pResultado.textContent = 'La mita es: ' + (numero/2);
+            break;
+        case 'cuadrado':
+            pResultado.textContent = 'El cuadrado es: ' + (numero*numero);
+            break;
+        case 'par':
+            if (num%2 === 0){
+                pResultado.textContent = 'El numero es par';
+            }
+            else{
+                pResultado.textContent = 'el numero es impar';
+            }
+            break;
+        default:
+        pResultado.textContent = 'No has seleccionado ninguna opcion'
+    }
+}
 
 function evalopc() {
     var numero = document.querySelector('#numero');
