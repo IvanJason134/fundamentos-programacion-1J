@@ -7,7 +7,43 @@ var btnTres = document.querySelector('#btnTres');
 btnTres.addEventListener('click', ejemplowhile);
 var btnCuatro = document.querySelector('#btnCuatro');
 btnCuatro.addEventListener('click', select);
+var btnCinco = document.querySelector('#btnCinco');
+btnCinco.addEventListener('click', dowhile);
+var circulos30 = document.querySelector('#circulos30');
+circulos30.addEventListener('click', circuloslocos);
+
 var opciones = document.querySelector('#opciones');
+var lienzo = document.querySelector('#lienzo');
+
+function circuloslocos() {
+    var n =document.querySelector('#n');
+    var fin = Number(n.value);
+
+    var i = 0
+    do{
+        var x = Math.trunc((Math.random() * 501) + 1);
+        var y = Math.trunc((Math.random() * 501) + 1); 
+        var diametro = Math.trunc((Math.random() * 50) + 1);  
+        if (x > 300) {
+            continue;
+        }    
+        var c = lienzo.getContext('2d'); 
+        c.beginPath();
+        c.fillStyle = 'rgba(0,255,0,0.5)';
+        c.arc(x, y, diametro, 0, 2*Math.PI);
+        c.fill();
+        i++;
+    }while(i <= 30)
+}
+
+function dowhile() {
+    var c = lienzo.getContext('2d');
+
+    c.beginPath();
+    c.fillStyle = 'rgba(0,255,0,0.5)';
+    c.arc(250, 250, 150, 0, 2*Math.PI);
+    c.fill();
+}
 
 function select(){
     var n = document.querySelector('#n');
